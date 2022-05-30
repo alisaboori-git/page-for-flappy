@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 6px;
+    background-color: #272727;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #267583;
+}
+
+.navMenu {
+    direction: rtl;
+    background: #272727;
+    position: fixed;
+    top: 0;
+    padding: 0 1em 10px;
+    /* top: 50%;
+    left: 50%; */
+    /* -webkit-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+    z-index: 10;
+    width: 100%;
+}
+
+#active, .menu-btn {
+    display: none;
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    /* width: 80px; */
+    padding: 1.2em 1em 0.5em 1em;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: #fddb3a;
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: #fddb3a;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover~.dot {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+    -webkit-transform: translateX(-220px);
+    transform: translateX(-220px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover~.dot {
+    -webkit-transform: translateX(-340px);
+    transform: translateX(-340px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+
+/* header ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    background-color: #272727;
+}
+
+.bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../img/2.png') center center no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.intro-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+.play_flappy {
+    background: url('../img/p_flappy.png') center center no-repeat;
+    background-size: 90%;
+    height: 400px;
+    width: 600px;
+}
+
+/* ! header ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* ! content ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.content1 {
+    margin-top: 100vh;
+    background-color: #272727;
+    padding: 4em 4em 10em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.356);
+}
+
+.game_introduction h1 {
+    padding: 0 0 10px 0;
+}
+
+.game_introduction {
+    flex-grow: 1fr;
+}
+
+.game_introduction_img {
+    min-height: 270px;
+    display: grid;
+    min-width: 400px;
+    width: 45vw;
+    background: url(../img/flappy-bird-.0.jpg) center center;
+    background-size: cover;
+    margin: 0 2em;
+    flex-grow: 1fr;
+    border-radius: 5px;
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.411);
+}
+
+
+.content2 {
+    padding: 4em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+
+/* btn ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* .play_btn{
+    padding: 1.5em;
+    padding-right: 100px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd829;
+} */
+
+.absolute {
+    position: absolute;
+    bottom: 4em;
+}
+
+.bird {
+    background: url('../img/bird_h.png') center center no-repeat;
+    background-size: 80%;
+    width: 60px;
+    height: 50px;
+    /* position: absolute; */
+    right: 10px;
+    /* z-index: 100; */
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a.noselect {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+    /* z-index: 1; */
+}
+
+a.noselect, a.noselect span, a.noselect div {
+    transition: all 200ms;
+}
+
+a.noselect .text {
+    transform: translateX(10px);
+    color: white;
+    font-weight: bold;
+}
+
+a.noselect .bird {
+    /* position: absolute; */
+    border-left: 1px solid #c41b1b;
+    transform: translateX(20px);
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+a.noselect:hover {
+    background: #ff3636;
+}
+
+a.noselect:hover .text {
+    color: transparent;
+}
+
+a.noselect:hover .bird {
+    /* width: 150px; */
+    transform: translateX(-25px);
+    border: none;
+    /* transition: all 200ms; */
+}
+
+a.noselect:focus {
+    outline: none;
+}
+
+/* btn ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* ! content ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 992px) {
+    .menu-btn {
+        display: block;
+        z-index: 201;
+    }
+
+    .navMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(44, 44, 44, 0.836);
+        clip-path: circle(25px at calc(100% - 45px) 45px);
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .navMenu a {
+        color: #f6f4e6;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: inline-block;
+        /* width: 80px; */
+        padding: 1.2em 1em 0.5em 1em;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:hover {
+        color: #fddb3a;
+    }
+
+    .navMenu .dot {
+        margin-bottom: 10px;
+        width: 6px;
+        height: 6px;
+        background: #fddb3a;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-transform: translate(0px, 40000px);
+        transform: translateX(0px, 40000px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:nth-child(1):hover~.dot {
+        -webkit-transform: translate(0px, -180px);
+        transform: translate(0px, -180px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(2):hover~.dot {
+        -webkit-transform: translate(0px, -90px);
+        transform: translate(0px, -90px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(3):hover~.dot {
+        -webkit-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    .navMenu a:nth-child(4):hover~.dot {
+        -webkit-transform: translate(0px, 90px);
+        transform: translate(0px, 90px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    #active:checked~.navMenu {
+        clip-path: circle(75%);
+    }
+
+    .menu-btn {
+        position: fixed;
+        z-index: 101;
+        right: 20px;
+        /* left: 20px; */
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        background: rgb(70, 70, 70);
+        /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+        transition: all 0.3s ease-in-out;
+    }
+
+    #active:checked~.menu-btn {
+        background: #fff;
+        color: rgba(44, 44, 44, 0.836);
+    }
+
+    #active:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .content1{
+        flex-direction: column;
+    }
+
+    .game_introduction_img {
+        display: none;
+    }
+}

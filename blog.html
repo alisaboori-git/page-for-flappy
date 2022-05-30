@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="active" onclick="check_input(event)">
+        <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+        <nav class="navMenu">
+            <a href="main.html" class="fa fa-home"></a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <div class="dot"></div>
+        </nav>
+    </nav>
+    <h1>BLOG</h1>
+    <div class="content">
+        <div class="post _1" onclick="show_content(event)">
+            <div class="cover"></div>
+            <div class="blog_image"></div>
+            <div class="blog_details">
+                <div class="extra_info blue">New</div>
+                <div class="title">Gotham Knights Dev Addresses Details That've Had Fans Feeling Concerned</div>
+                <div class="divider">
+                    <div class="auther">Isaiah Colbert</div>
+                    <div class="rate" onload="star(event)"> <span>78</span><span>%</span></div>
+                </div>
+            </div>
+            <div class="display_none">In recent weeks, WB Games Montreal has been shedding new light on its upcoming
+                Batman game sans Batman, Gotham Knights, and some details have left fans skeptical about the direction
+                the game is taking with Bruce Wayne’s surviving Bat Family. First, a 13-minute gameplay video revealed
+                that GK’s incarnation of Nightwing makes use of a jet-powered glider, while Red Hood has been endowed
+                with wild “soul energy” abilities. By far the most troubling revelation came via a bio for Batgirl,
+                published to the game’s website, that suggested she’d recovered from her disability through “raw
+                willpower and determination.”
+
+                During a Q&A session in Gotham Knights’ official Discord channel, creative director Patrick Redding
+                addressed the backlash over the insensitive Batgirl character bio, and provided insight into Nightwing’s
+                glider and Red Hood’s new powers.
+                The character bio for Batgirl on the Gotham Knights website discusses Barbara Gordon’s history as both
+                Batgirl and the Oracle. The Oracle was Gordon’s tech-genius alter ego who offered invaluable support to
+                Batman after a confrontation with the Joker, depicted in The Killing Joke, left her paralyzed. The
+                reason WB Games Montreal faced criticism for the bio is that it stated Gordon was spurred by the death
+                of her father to “recover from her wounds so that she could return to active duty as Batgirl.” This led
+                fans to call out the game for employing the tired comic book trope of heroes overriding their disability
+                through sheer willpower.
+
+                Redding revealed in the Q&A that, in the wake of the criticism they received, the team worked in
+                collaboration with AbleGamers, a nonprofit organization dedicated to improving accessibility in the
+                video game space, “to learn about different types of spinal injuries and the potential for someone to
+                regain mobility.”
+                “As with many of our characters and plot elements, the circumstances around Barbara’s injuries differ in
+                some important ways from how it’s been portrayed in the comics,” Redding said. “Barbara has been through
+                multiple surgeries followed by a lot of physical therapy and pain management [in Gotham Knights].”
+
+                Redding went on to say that the team acknowledges the criticism, and has replaced the contentious
+                description to read: “With extensive training and rehabilitation, she recovered from her wounds, and
+                returned to active duty as Batgirl.”
+
+                Redding went on to discuss the creative decisions behind Nightwing and Red Hood’s traversal abilities,
+                chiefly Nightwing’s Green Goblin-esque glider, and Red Hood’s new jumping ability.
+
+                During the 13-minute gameplay demo, Nightwing is shown traversing rooftops with the help of a
+                techno-glider called the Flying Trapeze. According to Eurogamer, Nightwing’s techno-glider is a
+                throwback reference to Batman’s retro Bat-glider. Redding said the creative team liked the idea of
+                Grayson utilizing one of Batman’s stealth drones in order to gain more altitude to perform his
+                death-defying acrobatics.
+
+                “[The Flying Trapeze is] designed to feel a bit improvised, and dependent on his extreme athleticism,
+                which fits Nightwing’s approach to everything,” he said. “Flying it has such a different feel from
+                Batgirl’s cape-gliding, and it blends really well with his bigger parkour and leap moves, as well as
+                with grappling.”
+
+                The most bizarre reveal in Gotham Knights’ gameplay trailer, for me at least, was Red Hood, aka Jason
+                Todd, leaping through the skies of Gotham in a clearly supernatural fashion using his new ability, the
+                Mystical Leap. Redding said the development team leaned on Red Hood’s origin story–which involves death
+                at the Joker’s hands and subsequent resurrection in the Lazarus Pit–when approaching his new powers,
+                intending them to serve as a manifestation of Todd growing into his own.
+
+                “We really liked the idea that as Jason starts to confront the trauma of dying and being brought back,
+                he begins to be able to tap into some lost abilities,” Redding said. “In the same way that he’s tried to
+                reinvent himself from anti-hero to hero while retaining his strengths, he discovers he can channel these
+                mystic talents in ways he finds familiar: Through his physicality [and] in how he moves, but also in how
+                he fights and even how he uses his weapons.”
+
+                Redding explained Todd’s new ability as one “just one manifestation of those powers” he received after
+                being revived in the Lazarus Pit. I only hope those powers include fixing my son’s skull so he doesn’t
+                have the bone structure of a Lego.
+
+                Gotham Knights is slated to release on October 25, now only for PC, PlayStation 5, and Xbox Series X/S.
+            </div>
+        </div>
+        <div class="post _2" onclick="show_content(event)">
+            <div class="cover"></div>
+            <div class="blog_image"></div>
+            <div class="blog_details">
+                <div class="extra_info purple">Intersting</div>
+                <div class="title">All Three Bioshock Games Are Currently Free On PC</div>
+                <div class="divider">
+                    <div class="auther">ByZack Zwiezen</div>
+                    <div class="rate" onload="star(event)"> <span>50</span><span>%</span></div>
+                </div>
+            </div>
+            <div class="display_none">
+                I’m not going to do a “Would you kindly” joke. I’m not going to do it. I’m better than that. Besides,
+                you don’t need to be brainwashed to know how good a deal it is to get all three Bioshock games on PC for
+                absolutely nothing at all via the latest Epic Games Store giveaway.
+
+                Starting today, you can grab, download, and install Bioshock: The Collection on PC via the Epic Games
+                Store. This bundle includes remastered and touched-up versions of Bioshock, Bioshock 2, and Bioshock:
+                Infinite. The collection also comes with all of the single-player DLC packs and expansions released for
+                the games, including the beloved Bioshock 2 DLC, Minerva’s Den.
+                As with past freebies from Epic, it’s yours forever once you create an account and redeem the game. And
+                as usual, this offer is only for the PC versions.
+
+                Don’t wait too long to pick up the Bioshock Collection for zero dollars and zero cents, as the deal
+                expires on June 2. After that, Epic will move on to its next free giveaway. Last week it was Borderlands
+                3.
+
+                Bioshock and Bioshock 2 are immersive sims, or at least I and many others think so. Some don’t think the
+                games are as deep or mechanically interesting as older imsim hits like System Shock, or newer genre
+                entries like Prey. Regardless, in Bioshock and its sequel, you explore a creepy and (mostly) abandoned
+                underwater city, Rapture. It was once a utopia, but greed, superpowers, and rich people ruined all that.
+                Typical. Throughout the games you upgrade your cool powers and weapons, helping you take on all sorts of
+                nasty splicers, the deadly remaining residents of the failed underwater utopia.
+
+                Bioshock Infinite is a bit different. It’s a more straight-up shooter, though it does feature some of
+                the same powers and mechanics as the first two games. In Infinite you play as Booker, a man sent to save
+                a young woman who’s locked up in a tower inside a giant floating city run by a madman. If you are
+                playing the game for the first time ever, in 2022, be prepared for some very blunt and not particularly
+                sophisticated political allegories. But if you can get past some of that stuff, you’ll discover a fun,
+                action-packed, and beautifully made shooter with a trippy ending and some great DLC.
+
+                All three games are worth playing, especially if you can get them for free, which we’ve established you
+                can. Just head over to the Epic Games Store and grab them before June 2. And who knows, maybe one day
+                the next Bioshock game will be released. Perhaps it will be better than Infinite. One can hope!
+            </div>
+        </div>
+        <div class="post _3" onclick="show_content(event)">
+            <div class="cover"></div>
+            <div class="blog_image"></div>
+            <div class="blog_details">
+                <div class="extra_info red">Important</div>
+                <div class="title">Why Everyone Spent The Week Losing It Over The ‘PS5 Pro’ And ‘Next Xbox’</div>
+                <div class="divider">
+                    <div class="auther">ByAri Notis</div>
+                    <div class="rate" onload="star(event)"> <span>60</span><span>%</span></div>
+                </div>
+            </div>
+            <div class="display_none">
+                It feels like the current console generation is only just getting started, and yet, a corner of the
+                internet spent a good part of this week obsessing over the next iteration, the presumed mid-generation
+                hardware refreshes for Sony’s PlayStation 5 and Microsoft’s Xbox Series X/S. The commotion is all thanks
+                to an event hosted by TV maker TCL, as first reported by Polish news site PPE.
+
+                This current console generation officially kicked off in November 2020, with Microsoft’s release of not
+                one but two next-gen machines. The Xbox Series X is the flagship, capable of rendering games at 4K
+                resolution and running them at frame rates of 60 fps. Alongside the Series X came the smaller Xbox
+                Series S (though not capable of hitting 4K, it’s still a reliable little Game Pass machine). Two days
+                later, Sony released two models of its next-gen console, the PS5. Both machines boast identical
+                specifications, and can match the Series X’s 4K60 target. Only difference? One has a disc drive, the
+                other does not.
+                Sorry, sorry, slow down a second. Why are we talking about even newer next-gen consoles? It’s impossible
+                to get the ones that are out today!
+                You’re right! Thanks to a number of variables—including bots, an ongoing semiconductor shortage, and the
+                general production woes that come with capitalism in a pandemic—buying a next-gen console remains an
+                uphill climb. Though the Xbox Series S pops up regularly at big-box retailers, the Xbox Series X has
+                only recently started to become readily available, and in erratic moments at that. Both models of the
+                PS5 are still elusive.
+
+                Yeah, and the timing itself seems too soon.
+                It is and it isn’t. Last time around, the “mid-generation refresh” came about around three, four years
+                into the console generation. The generation itself kicked off with the 2013 release of the PS4 and the
+                Xbox One. Sony released its mid-generation refresh, the PS4 Pro, in 2016. That same year, Microsoft
+                released a newer Xbox model, the Xbox One S, and followed that up in 2017 with the Xbox One X,
+                calcifying a naming convention that’s destined to flummox gamers until the end of time.
+                I hate it too.
+                It’s needlessly confusing, yes.
+
+                So, are we getting the PS5 Pro and whatever the heck the next Xbox is called or what?
+                At the moment, the release of a PS5 Pro or a new model of Xbox Series consoles is entirely unconfirmed.
+                Sony and Microsoft did not respond to a request for comment in time for publication. This week’s flurry
+                of speculation was spurred in part by timing. If such machines are due out in a year or two, based on
+                the timeline of last generation, now (or now-ish) would be the time to pull back the curtain. And this
+                year’s annual not-E3 marketing barrage is just a few weeks away, starting with Sony’s presser on June 2.
+
+                But a lot of the dialogue has been stoked by a deck circulated from TCL’s event.
+
+                Photos from the conference, published by PPE, showed a slide headlined “game console generations,” meant
+                to promote TCL’s “2022 product introduction.” Under a subhed marked “gen 9.5,” the slide featured
+                purported details about a “PS5 Pro” and “New Xbox Series S/X.” (Those photos served as the basis for a
+                series of semi-viral social media posts.) It claimed an output of 8K resolution with frame rates of up
+                to 120 fps—technically possible with this current generation of consoles, by the way, if you have the
+                right display.
+
+                There’s no indication that TCL has any insight into the hardware plans of Microsoft or Sony. A
+                representative for the company did not respond to a request for comment.
+
+                Did we get any good memes at least?
+                Oh yes. The internet, as usual, had a field day. Non-Morb meme of the week goes to:
+                That’s pretty good.
+                Right? You really know conjecture has hit a fever pitch once the memes go mega-viral like that. Of
+                course, rumors about a mid-generation refresh have circulated almost as long as this generation has gone
+                on. The previously most significant round came in September 2021, when YouTube channel Moore’s Law Is
+                Dead suggested the PS5 Pro could land in 2023 (with a sticker price of $700). It did not stoke memes to
+                the same degree.
+
+                But the timing really is undeniably hot right now. Beyond the ripe marketing window and the “evidence”
+                from TCL’s conference, there are precious few big-budget games to get excited about these days, what
+                with the wave of recent delays. It’s fun to get excited about stuff. And if fans know there are no big
+                touchstone games on the immediate horizon, the potential of splashy new consoles—even just an
+                announcement—is an easy thing to point to.
+
+                Personally, I’m in no rush, beyond the fact that console manufacturers—and this might sound nuts—should
+                probably ensure gamers can get their hands on the current models before releasing a newer, presumably
+                pricier one. For me, there’s really one indicator it’ll be time for an upgrade: when my PS5 starts
+                imitating a jet engine every time I try to boot up The Last of Us Part 3.
+            </div>
+        </div>
+        
+    </div>
+    <script src="./js/blog.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
